@@ -1,0 +1,194 @@
+
+
+h1 {
+  text-align: center;
+  font-size: 50px;
+  color: white;
+  margin-top: auto;
+}
+.two {
+  color: black;
+  opacity: 1;
+  animation: fade 4s infinite alternate;
+  font-size: 80px;
+}
+@keyframes fade {
+  0%,100% { opacity: 0 }
+  50% { opacity: 1 }
+}
+.one {
+  opacity: 1;
+  animation: fade 4s infinite alternate;
+}
+@keyframes fade {
+  0%,100% { opacity: 0 }
+  50% { opacity: 1 }
+}
+.three {
+  opacity: 1;
+  animation: fade 4s infinite alternate;
+}
+@keyframes fade {
+  0%,100% { opacity: 0 }
+  50% { opacity: 1 }
+}
+.welcome {
+  font: italic bold 2em Bodoni, serif;
+  color: #555;
+  opacity: 1;
+  animation: fade 8s infinite alternate;
+}
+@keyframes fade {
+  0%,100% { opacity: 0 }
+  50% { opacity: 1 }
+}
+.wave{
+  text-align: center;
+}
+.gName {
+  background: #8f1805;
+
+  height: 90px;
+}
+.choice1 {
+  position: relative;
+  display: inline-block;
+  margin-top: 1%;
+  margin-left: 35%;
+  align-items: center;
+}
+.choice2 {
+  position: relative;
+  display: inline-block;
+  margin-top: 1%;
+  margin-left: 3%;
+  align-items: center;
+}
+#player1 {
+  position: relative;
+  display: inline-block;
+  margin-top: 3%;
+  margin-left: 33%;
+  align-items: center;
+  overflow: auto;
+}
+#player2 {
+  position: relative;
+  display: inline-block;
+  margin-top: 3%;
+  margin-left: 2%;
+  align-items: center;
+  overflow: auto;
+}
+#player1Name {
+  height:30px;
+  width: 200px;
+  border: 3px solid #8f1805;
+  overflow: auto;
+}
+#player1Name:hover {
+  border: 3px solid yellow;
+}
+#player1Id {
+  height: 37px;
+  border-radius: 10px;
+  color: black;
+  font-weight: bold;
+  border: 3px solid black;
+  overflow: auto;
+}
+#player1Id:hover {
+  background-color: white;
+}
+
+#player2Name {
+  height:30px;
+  width: 200px;
+  border: 3px solid #8f1805;
+  overflow: auto;
+}
+#player2Name:hover {
+  border: 3px solid yellow;
+}
+#player2Id {
+  height: 37px;
+  border-radius: 10px;
+  font-weight: bold;
+  border: 3px solid black;
+  overflow: auto;
+}
+#player2Id:hover {
+  background-color: white;
+}
+#Begin {
+  height: 110px;
+  width: 110px;
+  border-radius: 65px;
+  color: white;
+  font-weight: bold;
+  margin-left: 46%;
+  margin-top: 1%;
+  border: 3px solid black;
+  background-color: #8f1805;
+  overflow: auto;
+}
+#Begin:hover {
+  background-color: green;
+}
+.lines {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+.board {
+    position: relative;
+    height: 50%;
+    width: 50%;
+    border:1px solid green;
+    box-sizing:border-box;
+    margin-top: 8%;
+    margin-left: 25%;
+}
+.board:before {
+    content:"";
+    display: block;
+    padding-top: 100%;
+}
+.line {
+    width: 100%;
+    overflow: auto;
+}
+.cell {
+    float: left;
+    width: 33.3333%;
+    border:1px solid black;
+    box-sizing:border-box;
+}
+.cell:before {
+    content:"";
+    display: block;
+    padding-top: 100%;
+}
+.cell:hover {
+  background-color: #8f1805;
+}
+/* #container1 {
+width: 960px;
+position: relative;
+margin:0 auto;
+line-height: 1.4em;
+}
+
+@media only screen and (max-width: 479px){
+    #container1 { width: 90%; }
+} */
+
+/* .cell-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+} */
