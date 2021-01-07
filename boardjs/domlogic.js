@@ -27,9 +27,9 @@ restartButton.addEventListener('click', startGame)
 function startGame() {
   circleTurn = false;
   cellElements.forEach(cell=> {
-    cell.classList.remove(X_Class)
-    cell.classList.remove(Circle_Class)
-    cell.removeEventListener('click', handleClick)
+    cell.classList.remove(X_Class);
+    cell.classList.remove(Circle_Class);
+    cell.removeEventListener('click', handleClick);
     cell.addEventListener('click', handleClick, { once: true});
   });
   setBoardHoverClass()

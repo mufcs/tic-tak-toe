@@ -4,9 +4,8 @@ body{
 
  h1 {
   text-align: center;
-  font-size: 50px;
+  font-size: 2vw;
   color: white;
-  margin-top: auto;
 }
 
 .two {
@@ -47,12 +46,13 @@ body{
  }
 
  .wave{
+  font-size: 1.5vw;
   animation: move 8s linear infinite;
 }
-@keyframes move{
-  0% {transform:translate(50);}
-  50% {transform:translate(1000px);}
-  /* 100% {opacity: 0;} how to make responsive*/
+ @keyframes move{
+  /* 0% {transform:translate(50vw);} */
+  50% {transform:translate(50vw);}
+  100% {transform:translate(100vw);}
  }
 
 .gName {
@@ -64,8 +64,8 @@ body{
   box-sizing:border-box;
 }
 :root {
-  --cell-size: 100px;
-  --mark-size: calc(var(--cell-size) * .9);
+  --cell-size: 200px;
+  --mark-size: calc(var(--cell-size) * .8);
 }
 
 .board {
