@@ -1,12 +1,14 @@
+body{
+  margin:0
+}
 
-
-
-/* h1 {
+ h1 {
   text-align: center;
   font-size: 50px;
   color: white;
   margin-top: auto;
 }
+
 .two {
   color: black;
   opacity: 1;
@@ -17,6 +19,7 @@
   0%,100% { opacity: 0 }
   50% { opacity: 1 }
 }
+
 .one {
   opacity: 1;
   animation: fade 4s infinite alternate;
@@ -25,6 +28,7 @@
   0%,100% { opacity: 0 }
   50% { opacity: 1 }
 }
+
 .three {
   opacity: 1;
   animation: fade 4s infinite alternate;
@@ -33,34 +37,32 @@
   0%,100% { opacity: 0 }
   50% { opacity: 1 }
 }
+
 .welcome {
   font: italic bold 2em Bodoni, serif;
   color: #555;
   opacity: 1;
   animation: fade 3s linear infinite;
-  /* animation: move 8s linear infinite; */
-/* } */
+  animation: move 8s linear infinite;
+ }
 
-/* .wave{
+ .wave{
   animation: move 8s linear infinite;
 }
 @keyframes move{
   0% {transform:translate(50);}
   50% {transform:translate(1000px);}
   /* 100% {opacity: 0;} how to make responsive*/
-/* } */
-/* .gName {
+ }
+
+.gName {
   background: #8f1805;
   height: 90px;
-} */ */ */
+}
 
 *, *::after, *::before {
   box-sizing:border-box;
 }
-body{
-  margin:0
-}
-
 :root {
   --cell-size: 100px;
   --mark-size: calc(var(--cell-size) * .9);
@@ -93,6 +95,7 @@ body{
 .cell:nth-child(3) {
   border-top: none;
 }
+
 .cell:nth-child(3n + 1) {
   border-left: none;
 }
@@ -100,6 +103,7 @@ body{
 .cell:nth-child(3n + 3) {
   border-right: none;
 }
+
 .cell:last-child,
 .cell:nth-child(7),
 .cell:nth-child(8) {
@@ -111,43 +115,109 @@ body{
   cursor: not-allowed;
 }
 
-.board.x .cell:hover {
+.cell.circle::before,
+.cell.circle::after {
+  background-color: black;
+}
 
+.board.x .cell:not(.x):not(.circle):hover::before,
+.board.x .cell:not(.x):not(.circle):hover::after {
+  background-color: lightgrey;
+}
+
+.cell.x::before,
+.cell.x::after {
+  background-color: black;
+}
+
+.board.circle .cell:not(.x):not(.circle):hover::before,
+.board.circle .cell:not(.x):not(.circle):hover::after {
+  background-color: lightgrey;
 }
 
 .cell.x::before,
 .cell.x::after,
-.board.x .cell:hover::before,
-.board.x .cell:hover::after {
+.board.x .cell:not(.x):not(.circle):hover::before,
+.board.x .cell:not(.x):not(.circle):hover::after {
   content: '';
   position: absolute;
   width: calc(var(--mark-size) * .15);
   height: var(--mark-size);
-  background-color: black;
 }
 
-.cell.x::before {
+.cell.x::before,
+.board.x .cell:not(.x):not(.circle):hover::before {
   transform: rotate(45deg);
 }
 
-.cell.x::after {
+.cell.x::after,
+.board.x .cell:not(.x):not(.circle):hover::after {
   transform: rotate(-45deg);
 }
 
 .cell.circle::before,
-.cell.circle::after {
+.cell.circle::after,
+.board.circle .cell:not(.x):not(.circle):hover::before,
+.board.circle .cell:not(.x):not(.circle):hover::after{
   content: '';
   position: absolute;
   border-radius: 50%;
-  background-color: black;
 }
-.cell.circle::before {
+
+.cell.circle::before,
+.board.circle .cell:not(.x):not(.circle):hover::before {
   width: var(--mark-size);
   height: var(--mark-size);
-  background-color: black;
 }
-.cell.circle::after {
+
+.cell.circle::after,
+.board.circle .cell:not(.x):not(.circle):hover::after {
   width: calc(var(--mark-size) * .7);
   height: calc(var(--mark-size) * .7);
   background-color: white;
 }
+
+.winning-message {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000000;
+  justify-content: center;
+  align-items: center;
+  color: #8f1805;
+  font-size: 4rem;
+  flex-direction: column;
+  font-family: 'UnifrakturCook', cursive;
+}
+
+.winning-message button {
+  font-size: 4rem;
+  font-family: 'UnifrakturCook', cursive;
+  background-color: white;
+  border: 1px solid black;
+  padding: .25em .5em;
+  border-radius: 1em;
+  cursor: pointer;
+}
+
+.winning-message button:hover {
+  background-color: black;
+  color: white;
+  border-color: white;
+}
+
+.winning-message.show {
+  display: flex;
+}
+
+/* #blink {
+  opacity: 1;
+  animation: fade .5s infinite alternate;
+}
+@keyframes fade {
+  0%,100% { opacity: 0 }
+  50% { opacity: 1 }
+} */
