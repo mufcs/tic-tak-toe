@@ -41,16 +41,18 @@ body{
   font: italic bold 2em Bodoni, serif;
   color: #555;
   opacity: 1;
-  animation: fade 3s linear infinite;
   animation: move 8s linear infinite;
  }
+ @keyframes fade {
+   0%,100% { opacity: 0 }
+   50% { opacity: 1 }
+ }
 
- .wave{
+ .wave {
   font-size: 1.5vw;
   animation: move 8s linear infinite;
 }
  @keyframes move{
-  /* 0% {transform:translate(50vw);} */
   50% {transform:translate(50vw);}
   100% {transform:translate(100vw);}
  }
