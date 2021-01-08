@@ -1,5 +1,5 @@
 
-# Project0 [tic tak toe](https://github.com/mufcs/tic-tak-toe)
+# Project0 [tic tak toe](https://mufcs.github.io/tic-tak-toe/).
 
 ## High level functional requirement
 
