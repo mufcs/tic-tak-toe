@@ -1,7 +1,7 @@
 
-#Heading Project0 (tic tak toe)
+# Project0 (tic tak toe)
 
-#Subheadings High level functional requirement
+## High level functional requirement
 
 ### Lists
 
@@ -42,7 +42,7 @@ I want to have an ability to re-set the game on winning, loosing or draw
 so that I can play again.
 
 
-# Subheadings High level technical overview of this project:
+## High level technical overview of this project:
 
 ### Lists
 
@@ -59,9 +59,9 @@ so that I can play again.
 * There must be a restart button for players to restart the game depending on "Win" or "Draw".
 * On restart, the game must function as per the above conditions.
 
-# Subheadings Applied tricks:
+## Applied tricks:
 
-# Subsubheadings css takeaway
+### css takeaway
 
 ### Lists
 
@@ -72,14 +72,14 @@ so that I can play again.
 * CSS Pseudo element [Pseudo element CSS] (https://www.w3schools.com/css/css_pseudo_elements.asp).
 * CSS animation [Animation CSS] (https://www.w3schools.com/css/css3_animations.asp).
 
-# Subsubheadings JavaScript
+### JavaScript
 
 ### Lists
 
 
-# Subheadings Retro
+## Retro
 
-# Subsubheadings What went well
+### What went well
 
 ### Lists
 
@@ -88,13 +88,17 @@ so that I can play again.
 * Mapping out the steps was done on day one to avoid distraction/s.
 * Well articulated README file.
 
-# Subsubheadings What did not go well
+### What did not go well
+
+### Lists
 
 * Lack of confidence in the beginning.
 * Impatient when code does not go right.
 * Fiddling with different options in google.
 
-# Subsubheadings Plans for upcoming project
+### Plans for upcoming project
+
+### Lists
 
 * Stop fiddling around, need to stick with what was signed off.
 * Regular interaction with TA's.
