@@ -3,8 +3,6 @@
 
 ## High level functional requirement
 
-### Lists
-
 * As a game
 I want to be Tic-tac-toe
 so that players can play me.
@@ -44,13 +42,12 @@ so that I can play again.
 
 ## High level technical overview of this project:
 
-### Lists
-
 * Build a board which is composed of a 3 x 3 square cells.
 * There must be two players, "X" and "O". Player "X" always makes the first move.
 * On mouse hover, in any of the empty cell/s their must be an indication of who the next player is (i.e. "X" or "O").
 * On mouse click, in any of the empty cell/s there must be "X" and "O" sign marked depending on player's turn.
 * On mouse hover, in any of the marked cell/s (i.e. "X" and "O") not allowed sign must be shown.
+* Every element in the browser must be responsive.
 * Define the winning combination as per the board.
 * Define the draw combination as per the board.
 * Show message to the players on win.
@@ -63,25 +60,22 @@ so that I can play again.
 
 ### css takeaway
 
-### Lists
-
 * Everything selector before and after element
-* CSS Units [Units CSS] (https://www.w3schools.com/cssref/css_units.asp).
-* CSS Variables [Variables CSS] (https://www.w3schools.com/css/css3_variables.asp).
-* CSS grid [Grid CSS] (https://www.w3schools.com/css/css_grid.asp).
-* CSS Pseudo element [Pseudo element CSS] (https://www.w3schools.com/css/css_pseudo_elements.asp).
-* CSS animation [Animation CSS] (https://www.w3schools.com/css/css3_animations.asp).
+* [CSS Units](https://www.w3schools.com/cssref/css_units.asp).
+* [CSS Variables](https://www.w3schools.com/css/css3_variables.asp).
+* [CSS grid](https://www.w3schools.com/css/css_grid.asp).
+* [CSS Pseudo element](https://www.w3schools.com/css/css_pseudo_elements.asp).
+* [CSS animation](https://www.w3schools.com/css/css3_animations.asp).
 
-### JavaScript
+### JavaScript takeaway
 
-### Lists
+* [Event listener](https://www.w3schools.com/js/js_htmldom_eventlistener.asp).
+* [Destructuring assignment](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)
 
 
 ## Retro
 
 ### What went well
-
-### Lists
 
 * Requirements were laid out perfectly.
 * Understanding of requirement and white board session was awesome.
@@ -90,15 +84,11 @@ so that I can play again.
 
 ### What did not go well
 
-### Lists
-
 * Lack of confidence in the beginning.
 * Impatient when code does not go right.
 * Fiddling with different options in google.
 
 ### Plans for upcoming project
-
-### Lists
 
 * Stop fiddling around, need to stick with what was signed off.
 * Regular interaction with TA's.
