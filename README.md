@@ -44,6 +44,8 @@ so that I can play again.
 
 # Subheadings High level technical overview of this project:
 
+### Lists
+
 * Build a board which is composed of a 3 x 3 square cells.
 * There must be two players, "X" and "O". Player "X" always makes the first move.
 * On mouse hover, in any of the empty cell/s their must be an indication of who the next player is (i.e. "X" or "O").
@@ -57,4 +59,46 @@ so that I can play again.
 * There must be a restart button for players to restart the game depending on "Win" or "Draw".
 * On restart, the game must function as per the above conditions.
 
-Applied CSS tricks:
+# Subheadings Applied tricks:
+
+# Subsubheadings css takeaway
+
+### Lists
+
+* Everything selector before and after element
+* CSS Units [Units CSS] (https://www.w3schools.com/cssref/css_units.asp).
+* CSS Variables [Variables CSS] (https://www.w3schools.com/css/css3_variables.asp).
+* CSS grid [Grid CSS] (https://www.w3schools.com/css/css_grid.asp).
+* CSS Pseudo element [Pseudo element CSS] (https://www.w3schools.com/css/css_pseudo_elements.asp).
+* CSS animation [Animation CSS] (https://www.w3schools.com/css/css3_animations.asp).
+
+# Subsubheadings JavaScript
+
+### Lists
+
+
+# Subheadings Retro
+
+# Subsubheadings What went well
+
+### Lists
+
+* Requirements were laid out perfectly.
+* Understanding of requirement and white board session was awesome.
+* Mapping out the steps was done on day one to avoid distraction/s.
+* Well articulated README file.
+
+# Subsubheadings What did not go well
+
+* Lack of confidence in the beginning.
+* Impatient when code does not go right.
+* Fiddling with different options in google.
+
+# Subsubheadings Plans for upcoming project
+
+* Stop fiddling around, need to stick with what was signed off.
+* Regular interaction with TA's.
+* Never say no attitude.
+* No room for procrastination.
+* Use JSFiddle to tidy code.
+* Be patient and nice to yourself, as you are trying to run before you can walk.  

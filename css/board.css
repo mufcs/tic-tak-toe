@@ -43,18 +43,18 @@ body{
   opacity: 1;
   animation: move 8s linear infinite;
  }
- @keyframes fade {
-   0%,100% { opacity: 0 }
-   50% { opacity: 1 }
- }
+ /* @keyframes fade {
+   0%,100% { opacity: 1 }
+   50% { opacity: 0 }
+ } */
 
  .wave {
   font-size: 1.5vw;
   animation: move 8s linear infinite;
 }
  @keyframes move{
-  50% {transform:translate(50vw);}
-  100% {transform:translate(100vw);}
+  50% {transform:translate(44vw);}
+  100% {transform:translate(100vw - ave-length);}
  }
 
 .gName {
@@ -214,12 +214,3 @@ body{
 .winning-message.show {
   display: flex;
 }
-
-/* #blink {
-  opacity: 1;
-  animation: fade .5s infinite alternate;
-}
-@keyframes fade {
-  0%,100% { opacity: 0 }
-  50% { opacity: 1 }
-} */
